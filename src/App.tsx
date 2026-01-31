@@ -1,9 +1,11 @@
-import "./App.css";
+import { Header } from "@/components/Header";
 
 function App() {
   return (
     <>
-      <h1>Server Metrics</h1>
+      <div className="min-h-screen bg-background">
+        <Header lastUpdated={new Date()} />
+      </div>
     </>
   );
 }
